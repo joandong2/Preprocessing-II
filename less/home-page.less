@@ -1,13 +1,20 @@
+header {
+
+	border-bottom: 2px dashed @navigation-border;
+	padding: 40px 0;
+
+	.container {
+		.flex(space-between, stretch);
+		
+	}
+}
+
 .home {
 
   .content-section {
-    margin: 30px 0;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+	margin: 30px 0;
+	.flex(space-between, @wrap: wrap);
 
-   
-    
     .text-content {
       width: 48%;
       padding-right: 1%;
@@ -51,7 +58,7 @@
     padding-top: 30px;
     border-top: 2px dashed @navigation-border;
     display: flex;
-    justify-content: space-between;
+    .flex(space-between);
 
     .destination {
       width: 30%;

@@ -168,6 +168,16 @@ img {
   width: 100%;
   margin: 0 auto;
 }
+nav {
+  margin-right: 30px;
+  padding-top: 10px;
+}
+nav a {
+  text-decoration: none;
+  color: #212529;
+  font-size: 1.6rem;
+  margin-left: 30px;
+}
 .footer {
   width: 100%;
   border-top: 2px dashed silver;
@@ -179,11 +189,22 @@ img {
   font-size: 1.6rem;
   padding: 20px;
 }
+header {
+  border-bottom: 2px dashed #C0C0C0;
+  padding: 40px 0;
+}
+header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  flex-wrap: nowrap;
+}
 .home .content-section {
   margin: 30px 0;
   display: flex;
-  flex-wrap: wrap;
   justify-content: space-between;
+  align-items: stretch;
+  flex-wrap: wrap;
 }
 .home .content-section .text-content {
   width: 48%;
@@ -220,6 +241,8 @@ img {
   border-top: 2px dashed #C0C0C0;
   display: flex;
   justify-content: space-between;
+  align-items: stretch;
+  flex-wrap: nowrap;
 }
 .home .content-pick .destination {
   width: 30%;
