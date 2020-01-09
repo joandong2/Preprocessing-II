@@ -2,10 +2,20 @@ header {
 
 	border-bottom: 2px dashed @navigation-border;
 	padding: 40px 0;
+	
+	h1 {
+		@media @mobile {
+			text-align: center;
+		}
+	}
 
 	.container {
 		.flex(space-between, stretch);
-		
+    
+		@media @mobile {
+			padding: 0 2%;
+			flex-direction: column;
+		}
 	}
 }
 
@@ -28,16 +38,30 @@ header {
 
   .content-section {
 	margin: 30px 0;
-	.flex(space-between, @wrap: wrap);
+    .flex(space-between, @wrap: wrap);
+    
+    @media @mobile {
+        flex-direction: column;
+    }
 
     .text-content {
       width: 48%;
       padding-right: 1%;
+
+        @media @mobile {
+            width: 100%;
+            padding-right: 0%;
+        }
     }
 
     .img-content {
       width: 48%;
       padding-left: 1%;
+
+      @media @mobile {
+          width: 100%;
+          padding-left: 0%;
+      }
 
       img {
         border-radius: 10px;
@@ -49,20 +73,38 @@ header {
     padding-bottom: 30px;
     border-bottom: 2px dashed @navigation-border;
 
+    @media @mobile {
+        flex-direction: column-reverse;
+    }
+
     .text-content {
       padding-left: 1%;
       padding-right: 0;
+
+        @media @mobile {
+            padding-left: 0%;
+        }
+
     }
 
     .img-content {
       padding-right: 1%;
       padding-left: 0;
+
+        @media @mobile {
+            padding-right: 0%;
+        }
+
     }
   }
 
   .content-destination {
     width: 75%;
     margin: 0 auto 30px;
+
+    @media @mobile {
+        width: 100%;
+    }
 
     img {
       border-radius: 10px;
@@ -75,9 +117,18 @@ header {
     display: flex;
     .flex(space-between);
 
+    @media @mobile {
+        flex-direction: column;
+        .flex(center, center);
+    }
+
     .destination {
       width: 30%;
-	  margin-bottom: 30px;
+      margin-bottom: 30px;
+      
+        @media @mobile {
+            width: 90%;
+        }
 		
 		.btn {
 			background: #008080;

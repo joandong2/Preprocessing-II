@@ -168,6 +168,11 @@ img {
   width: 100%;
   margin: 0 auto;
 }
+@media (max-width: 500px) {
+  .container {
+    padding: 0 8%;
+  }
+}
 nav {
   margin-right: 30px;
   padding-top: 10px;
@@ -193,11 +198,22 @@ header {
   border-bottom: 2px dashed #C0C0C0;
   padding: 40px 0;
 }
+@media (max-width: 500px) {
+  header h1 {
+    text-align: center;
+  }
+}
 header .container {
   display: flex;
   justify-content: space-between;
   align-items: stretch;
   flex-wrap: nowrap;
+}
+@media (max-width: 500px) {
+  header .container {
+    padding: 0 2%;
+    flex-direction: column;
+  }
 }
 .jumbotron .container {
   border-bottom: 2px dashed #C0C0C0;
@@ -215,13 +231,30 @@ header .container {
   align-items: stretch;
   flex-wrap: wrap;
 }
+@media (max-width: 500px) {
+  .home .content-section {
+    flex-direction: column;
+  }
+}
 .home .content-section .text-content {
   width: 48%;
   padding-right: 1%;
 }
+@media (max-width: 500px) {
+  .home .content-section .text-content {
+    width: 100%;
+    padding-right: 0%;
+  }
+}
 .home .content-section .img-content {
   width: 48%;
   padding-left: 1%;
+}
+@media (max-width: 500px) {
+  .home .content-section .img-content {
+    width: 100%;
+    padding-left: 0%;
+  }
 }
 .home .content-section .img-content img {
   border-radius: 10px;
@@ -230,17 +263,37 @@ header .container {
   padding-bottom: 30px;
   border-bottom: 2px dashed #C0C0C0;
 }
+@media (max-width: 500px) {
+  .home .inverse-content {
+    flex-direction: column-reverse;
+  }
+}
 .home .inverse-content .text-content {
   padding-left: 1%;
   padding-right: 0;
+}
+@media (max-width: 500px) {
+  .home .inverse-content .text-content {
+    padding-left: 0%;
+  }
 }
 .home .inverse-content .img-content {
   padding-right: 1%;
   padding-left: 0;
 }
+@media (max-width: 500px) {
+  .home .inverse-content .img-content {
+    padding-right: 0%;
+  }
+}
 .home .content-destination {
   width: 75%;
   margin: 0 auto 30px;
+}
+@media (max-width: 500px) {
+  .home .content-destination {
+    width: 100%;
+  }
 }
 .home .content-destination img {
   border-radius: 10px;
@@ -253,9 +306,23 @@ header .container {
   align-items: stretch;
   flex-wrap: nowrap;
 }
+@media (max-width: 500px) {
+  .home .content-pick {
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+  }
+}
 .home .content-pick .destination {
   width: 30%;
   margin-bottom: 30px;
+}
+@media (max-width: 500px) {
+  .home .content-pick .destination {
+    width: 90%;
+  }
 }
 .home .content-pick .destination .btn {
   background: #008080;
