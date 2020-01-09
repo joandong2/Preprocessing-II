@@ -199,6 +199,15 @@ header .container {
   align-items: stretch;
   flex-wrap: nowrap;
 }
+.jumbotron .container {
+  border-bottom: 2px dashed #C0C0C0;
+}
+.jumbotron img {
+  margin-bottom: 30px;
+}
+.jumbotron p {
+  margin-bottom: 30px;
+}
 .home .content-section {
   margin: 30px 0;
   display: flex;
@@ -247,4 +256,14 @@ header .container {
 .home .content-pick .destination {
   width: 30%;
   margin-bottom: 30px;
+}
+.home .content-pick .destination .btn {
+  background: #008080;
+  border-radius: 15px;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  color: #FFFFFF;
+  padding: 20px;
+  text-align: center;
+  font-size: 2rem;
 }
