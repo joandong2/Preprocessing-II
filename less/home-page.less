@@ -10,7 +10,11 @@ header {
 	}
 
 	.container {
-		.flex(space-between, stretch);
+        .flex(space-between, stretch);
+        
+        @media @tablet {
+            padding: 0 4%;
+        }
     
 		@media @mobile {
 			padding: 0 2%;
@@ -131,14 +135,7 @@ header {
         }
 		
 		.btn {
-			background: #008080;
-			border-radius: 15px;
-			-webkit-border-radius: 15px;
-			-moz-border-radius: 15px;
-			color: @white;
-			padding: 20px;
-			text-align: center;
-			font-size: 2rem;
+            .button(#008080, 15px, @white);
 		}
     }
   }

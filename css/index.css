@@ -168,6 +168,11 @@ img {
   width: 100%;
   margin: 0 auto;
 }
+@media (max-width: 960px) {
+  .container {
+    padding: 0 5%;
+  }
+}
 @media (max-width: 500px) {
   .container {
     padding: 0 8%;
@@ -208,6 +213,11 @@ header .container {
   justify-content: space-between;
   align-items: stretch;
   flex-wrap: nowrap;
+}
+@media (max-width: 960px) {
+  header .container {
+    padding: 0 4%;
+  }
 }
 @media (max-width: 500px) {
   header .container {
@@ -325,7 +335,7 @@ header .container {
   }
 }
 .home .content-pick .destination .btn {
-  background: #008080;
+  background-color: #008080;
   border-radius: 15px;
   -webkit-border-radius: 15px;
   -moz-border-radius: 15px;
